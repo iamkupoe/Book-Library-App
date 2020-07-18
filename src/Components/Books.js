@@ -47,6 +47,7 @@ class Books extends Component {
 
     render() {
         const sortedBooks = this.state.books.sort((a, b) => {
+            return
             if(this.state.sort === 'Newest') {
                 return parseInt(b.volumeInfo.publishedDate.substring(0,4)) - parseInt(a.volumeInfo.publishedDate.substring(0,4))
             }
